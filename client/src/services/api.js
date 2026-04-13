@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://solace-awhl.onrender.com/api',
+  baseURL: 'https://solace-awhl.onrender.com',
 });
 
 // Attach token to every request automatically

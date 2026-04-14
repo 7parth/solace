@@ -15,7 +15,7 @@ const Login = () => {
     setLoading(true);
     setError('');
     try {
-      const { data } = await API.post('/auth/login', { email, password });
+      const { data } = await API.post('/auth/login', { email, password }); // baseURL already includes /api
       localStorage.setItem('userInfo', JSON.stringify(data));
       navigate('/dashboard');
     } catch (err) {
